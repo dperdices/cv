@@ -43,7 +43,7 @@ jobs:
             run: |
                 cd /mnt
                 apt-get update
-                DEBIAN_FRONTEND=noninteractive apt-get install -y texlive-full 
+                apt-get install -y texlive-full 
                 xelatex cv.tex 
                 biber cv 
                 xelatex cv.tex
