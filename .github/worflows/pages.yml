@@ -43,7 +43,7 @@ jobs:
             run: |
                 cd /mnt
                 apt-get update
-                apt-get install -qq -y texlive-full 
+                DEBIAN_FRONTEND=noninteractive apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
                 xelatex cv.tex 
                 biber cv 
                 xelatex cv.tex
