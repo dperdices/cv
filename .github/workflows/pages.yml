@@ -47,6 +47,7 @@ jobs:
                 xelatex cv.tex 
                 biber cv 
                 xelatex cv.tex
+                xelatex cv.tex
                 mkdir -p build/
                 cp cv.pdf build/
       - name: Upload artifact
